@@ -1,0 +1,225 @@
+*  {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+#top { /*top background image*/
+    background-image: url(images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    margin: 0px;
+}
+#bottom { /*bottom background image AND customer review flex properties*/
+    background-image: url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+/*main heading and statement at the top*/
+header {
+    width: 33%;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    margin: 5px;
+}
+h1 { /*header text*/
+    color:rgb(80, 32, 80);/*very dark magenta*/
+    font-size: 40pt;
+    font-weight: 700;
+}
+#statement { /*paragraph at the top*/
+    margin: 10px;
+    letter-spacing: 2px;
+    color: rgb(147, 123, 146);/*dark greyish magenta*/
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+div#box { /*container for heading and statement*/
+    max-width: 490px;
+}
+
+/*ratings at the side*/
+aside {
+    width: 50%;
+    position: relative;
+    bottom: 170px;
+}
+#ratings { /*ratings boxes float properties*/
+    float: right;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: right;
+}
+.magazine { /*ratings box properies*/
+    background-color: rgb(247, 242, 247);/*light greyish magenta*/
+    border-radius: 10px;
+    height: 30px;
+    width: 400px;
+    padding: 15px;
+    margin: 10px;
+}
+#one { /*top ratings box at the side*/
+    position: relative;
+    right: 10px;
+}
+#two { /*middle ratings box at the side*/
+    position: relative;
+    left: 50px;
+}
+#three { /*bottom ratings box at the side*/
+    position: relative;
+    left: 100px;
+}
+h2 { /*ratings text*/
+    color:rgb(80, 32, 80);/*very dark magenta*/
+    font-size: 15px;
+    font-weight: 700;
+    position: relative;
+    left: 160px;
+    bottom: 20px;
+}
+
+/*customer reviews at the bottom*/
+.customer { /*customer review box properties*/
+    background-color: rgb(80, 32, 80);/*very dark magenta*/
+    border-radius: 10px;
+    height: 200px;
+    width: 360px;
+    min-width: 360px;
+    margin: 25px;
+    padding: 30px;
+}
+.photo { /*customer photo*/
+    border-radius: 50%;
+    padding: 15px;
+}
+.quote { /*customer quote*/
+    color: rgb(247, 242, 247);/*light greyish magenta*/
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin: 10px;
+}
+.who { /*customer name and verified buyer text*/
+    float: right;
+    1position: relative;
+    right: 170px;
+    top: 20px;
+}
+#left { /*box on the left containing customer review*/
+    position: relative;
+    bottom: 100px;
+}
+#middle { /*box in the middle containing customer review*/
+    position: relative;
+    bottom: 70px;
+}
+#right { /*box on the right containing customer revie*/
+    position: relative;
+    bottom: 40px;
+}
+h3{ /*customer name*/
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 0px;
+}
+h4 { /*verified buyer text*/
+    color: rgb(238, 104, 164);/*soft pink*/
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 4px;
+}
+
+/*tablet screen responsive design*/
+@media screen and (max-width: 1424px) { 
+
+#bottom { /*bottom background image*/
+    height: 600px;
+}
+
+/*mobile screen responsive design*/
+@media screen and (max-width: 954px) { 
+    
+#top { /*top background image*/
+    background-image: url(images/bg-pattern-top-mobile.svg);
+}
+#bottom { /*bottom background image*/
+    background-image: url(images/bg-pattern-bottom-desktop.svg);
+    background-position: bottom right;
+}
+/*main heading and statement at the top*/
+header {
+    position: static;
+    width: 300px;
+    margin: auto;
+}
+h1 { /*header text*/
+    font-size: 32pt;
+    text-align: center;
+}
+#statement { /*paragraph at the top*/
+    text-align: center;
+    font-size: 10pt;
+}
+#box { /*container for heading and statement*/
+    padding-top: 70px;
+ }
+
+/*ratings at the side*/
+aside {
+    position: relative;
+    right: 175px;
+    top: 20px;
+}
+.magazine { /*ratings box properies*/
+    height: 50px;
+    width: 300px;
+    padding: 15px;
+    margin: 10px;
+}
+.stars { /*ratings star positioning*/
+    position: relative;
+    left: 90px;
+}
+h2 { /*ratings text*/
+    position: relative;
+    left: 60px;
+    top: 7px;
+}
+#one { /*top ratings box*/
+    position: static;
+}
+#two{ /*middle ratings box*/
+    position: static;
+}
+#three { /*bottom ratings box*/
+    position: static;
+}
+
+/*customer reviews at the bottom*/
+#bottom { /*background image AND customer review box positioning*/
+    background-position: bottom right;
+    height: 790px;
+    position: relative;
+    top: 170px;
+}
+.customer { /*customer review box properties*/
+    width: 270px;
+    min-width: 270px;
+    margin: 0px;
+}
+.who {/*customer name and verified buyer text*/
+    position: relative;
+    right: 80px;
+}
+ }
+ 
